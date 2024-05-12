@@ -10,6 +10,6 @@ lede: >
   in the process of publication, and has organized performances of Decruck's
   music in the United States and abroad.
 layout: project
-project_catagory: research 
+project_catagory: decruck
 project_order: 0
 ---

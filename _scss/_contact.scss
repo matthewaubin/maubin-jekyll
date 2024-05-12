@@ -32,7 +32,6 @@ main.contact-page {
     }
 
     input[type=submit] {
-      margin: 0 auto;
       padding: 10px;
       font-size: 1em;
       border: none;
@@ -55,5 +54,30 @@ main.contact-page {
   .site-credit {
     margin: 3em 0 1em;
     font-size: 0.75em;
+  }
+
+  // Mailchimp style overrides
+  .mc-field-group {
+    label, input {
+        width: 100%;
+        display: block;
+        @include respond-to(medium-plus) {
+            width: 90%;
+        }
+    }
+  }
+
+  
+  .newsletter-header {
+    margin-bottom: 1em;
+  }
+
+  .newsletter-image {
+    display: block;
+    width: 100%;
+    height: 300px;
+    background-position: center center;
+    background-size: cover;
+    margin-bottom: 1em;
   }
 }

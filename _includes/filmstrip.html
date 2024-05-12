@@ -1,0 +1,12 @@
+<div class="filmstrip">
+    <div class="container filmstrip-container">
+        <div class="row filmstrip-row">
+            {% for el in page.filmstrip %}
+            <div class="col-3 filmstrip-element">
+                <img class="filmstrip-image" src="/images/filmstrip/{{ el }}" alt=""/>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+

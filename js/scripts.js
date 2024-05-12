@@ -1,16 +1,18 @@
 $(document).ready(function() {
     // Mobile Nav
     $(".mobile-nav-trigger").click(function(){
-        $(".mobile-nav").css('display', 'none');
-        $("nav").css('background-color', '#FFFFFF');
-        $(".nav-row-container").fadeIn(500, function(){
-            $(".nav-row-container").css('display', 'flex');
+        $(".mobile-nav-trigger").css('display', 'none');
+        //$("nav").css('background-color', '#FFFFFF');
+        $(".menu-container").fadeIn(500, function(){
+            $(".menu-container").css('display', 'block');
+            $(".mobile-nav-exit").css('display', 'block');
         });
     });
 
     $(".mobile-nav-exit").click(function(){
-        $(".nav-row-container").fadeOut(500, function(){
-            $(".mobile-nav").fadeIn();
+        $(".mobile-nav-exit").css('display', 'none');
+        $(".menu-container").fadeOut(500, function(){
+            $(".mobile-nav-trigger").fadeIn();
         });
     });
 
@@ -55,18 +57,6 @@ $(document).ready(function() {
             boxShadow: "0 2px 8px 0 rgba(0,0,0,0.5),0 -5px 3px -10px #fff",
             color: "#000000"
         })
-        .addTo(controller);
-
-    new ScrollMagic.Scene({triggerElement: ".hp-about", duration: 200})
-        .setTween("nav.home-page-nav h1", {display: "block"})
-        .addTo(controller);
-
-    new ScrollMagic.Scene({triggerElement: ".hp-about", duration: 200})
-        .setTween("nav.home-page-nav a", {color: "#000000"})
-        .addTo(controller);
-
-    new ScrollMagic.Scene({triggerElement: ".hp-about", duration: 200})
-        .setTween("nav.home-page-nav .menu ul li.bordered-nav-el", {borderColor: "#000000"})
         .addTo(controller);
 
     /* Menu active class */
@@ -136,4 +126,10 @@ $(document).ready(function() {
             }
         });
     });
+
+    // Projects page: have last element fill column if there are an odd number of projects
+    var projectElements = $('.project-category-col');
+    if (projectElements.length % 2) {
+        projectElements.last().removeClass('col-md-6').addClass('col');
+    }
 });

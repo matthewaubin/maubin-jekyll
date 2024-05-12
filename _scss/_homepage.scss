@@ -1,16 +1,35 @@
-nav.home-page-nav {
-  @include respond-to(medium-plus) {
-    background-color: rgba(0,0,0,0);
-    box-shadow: none;
-  }
-}
+div.marquee-container {
+    min-height: 100vh;
 
-div.marquee-container.home-page-marquee {
-    background-image: url('../images/matt_aubin083_MainPhoto.jpg');
-    background-position: 85% 0%;
-    color: #FFFFFF;
     @include respond-to(medium-plus) {
-        background-position: 0% 0%;
+        height: 100vh;
+    }
+
+    &.home-page-marquee {
+        background-size: cover;
+        background-image: url('../images/kj-final/kj-final-418.2.jpg');
+        background-position: center center;
+        @include respond-to(medium-plus) {
+            background-position: 0% 30%;
+        }
+    }
+
+    .marquee-name-container {
+        height: 100vh;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: flex-start;
+        margin-top: 85px;
+        text-align: center;
+        font-size: 4rem;
+        line-height: 1em;
+
+        @include respond-to(medium-plus) {
+            margin-top: 0;
+            font-size: 5rem;
+            justify-content: center;
+        }
     }
 }
 
@@ -95,6 +114,12 @@ $hp-about-height: 600px;
 
 .hp-recording {
     background-color: rgb(231, 231, 231);
+
+    .container {
+        @include respond-to(wide-plus) {
+            max-width: fit-content;
+        }
+    }
 
     .hp-recording-content-container {
         display: flex;

@@ -31,6 +31,8 @@ nav h1 {
   letter-spacing: 3px;
   @include respond-to(small) {
     line-height: 1em;
+    font-size: 1.5em;
+    text-align: left;
   }
   text-align: center;
   margin: 0;
@@ -96,6 +98,11 @@ footer .credit {
 .sm-caps {
   font-size: 0.75em;
   text-transform: uppercase;
+}
+
+sup {
+    vertical-align: super;
+    font-size: smaller;
 }
 
 .btn {

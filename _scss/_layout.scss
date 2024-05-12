@@ -32,18 +32,6 @@ nav {
     }
 }
 
-div.marquee-container {
-    min-height: 450px;
-    @include respond-to(medium-plus) {
-        min-height: 550px;
-    }
-    display: flex;
-    flex-flow: row nowrap;
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-}
-
 footer {
     //background-color: #080808;
     background-color: $secondary-color;

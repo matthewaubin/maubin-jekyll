@@ -3,12 +3,13 @@ div.marquee-container.about-page-marquee {
 }
 
 main.about-page {
-  .container.narrow {
-    max-width: 600px;
-    flex-flow: column nowrap;
-
-    p {
+  .container {
+    p, img {
         margin-bottom: 1em;
+    }
+
+    hr {
+        margin: 2em 0;
     }
   }
 }

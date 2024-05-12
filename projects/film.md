@@ -1,6 +1,6 @@
 ---
 title: Film and Television
-image: IZOD.jpeg
+image: kj-final/kj-final-355-1.2.jpg
 layout: project
 project_catagory: film
 weight: 5

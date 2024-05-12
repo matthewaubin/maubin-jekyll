@@ -1,4 +1,6 @@
 .projects-page {
+    padding-bottom: 0px;
+
     h2 {
         text-transform: uppercase;
         padding-bottom: 0.5em;
@@ -9,8 +11,6 @@
         margin-bottom: 0.5em;
     }
     .row {
-        margin-bottom: 2.5rem;
-
         .project-image {
             margin-bottom: 1em;
             @include respond-to(medium-plus) {
@@ -38,6 +38,8 @@
 
     min-height: 350px;
 
+    display: block;
+
     @include respond-to(medium-plus) {
         min-height: 450px;
     }
@@ -56,13 +58,18 @@
 
     .project-category-title h2 {
         font-size: 1em;
+        padding-bottom: 0px;
         border-bottom: none;
+        color: #000000;
     }
 
     .btn-sm {
         background-color: #000000;
-        // TODO: fix the text color on hover
+        &:hover {
+            color: grey;
+        }
     }
+
 
     .project-alt-content {
         margin-bottom: 1em;
@@ -74,4 +81,36 @@
     height: 5px;
     background-color: #000000;
     margin: 3rem auto;
+}
+
+.project-page {
+    .gallery-container {
+        columns: 1;
+        @include respond-to(medium-plus) {
+            columns: 3;
+        }
+
+        .gallery-item {
+            margin-bottom: 1em;
+        }
+    }
+}
+
+.gallery-image-container {
+    height: 400px;
+    background-size: contain;
+    background-position:  center;
+    background-repeat: no-repeat;
+    margin-bottom: 0.5em;
+}
+
+.gallery-row {
+    position: relative;
+}
+
+.lightbox {
+    position: absolute;
+    width: 100%;
+    height: 800px;
+    background-color: #000000B0;
 }

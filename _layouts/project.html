@@ -1,4 +1,4 @@
-<html>
+<!DOCTYPE html>
 {% include head.html %}
 
 <body>
@@ -19,27 +19,29 @@
     {% assign title = '' %}
     {% for c in site.data.project_catagories %}
         {% if c.catagory == page.project_catagory %}{% assign title = c.heading %}{% endif %}
-    {% endfor%}
+    {% endfor %}
     <div class="container">
-
       <h1>{{ title }}</h1>
     </div>
     <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-8">
-                {{ page.content }}
-            </div>
-        </div>
-        <div class="row justify-content-center">
-            <div class="col-12">
-                <div class="project-page-spacer"></div>
-            </div>
-        </div>
         <div class="row">
-        {% assign projects = site.project | where: "project_catagory", page.project_catagory | sort: "project_order" %}
-        {% for project in projects %}
+        {% for project in page.projects %}
             {% include project_item.html project=project %}
         {% endfor %}
+        </div>
+        <div class="row gallery-row">
+            <div class="col-12">
+               <div class="gallery-container">
+                {% for image in page.images%}
+                   <div class="gallery-item">
+                      <div class="gallery-body">
+                          <img src="/images/{{ image.image }}" alt=""/> 
+                          <!--<div class="gallery-image-container" style="background-image:url(/images/{{ image.image }})"></div>-->
+                      </div>
+                   </div>
+                {% endfor %}
+               </div> 
+            </div>
         </div>
         <div class="row">
             <div class="col-6">
