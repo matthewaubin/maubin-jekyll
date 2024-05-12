@@ -61,7 +61,7 @@ $(document).ready(function() {
 
     /* Menu active class */
     $('.menu a').map(function(idx, el){
-        var elUrlRoot = el.href.split('.')[0];
+        var elUrlRoot = el.href.replace('.html', '');
         if (window.location.href.startsWith(elUrlRoot)) {
             $(el).addClass('active');
         }
