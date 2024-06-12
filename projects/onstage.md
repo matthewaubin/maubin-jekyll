@@ -9,11 +9,9 @@ projects:
     title: The Chelsea Symphony
     image: BCB-2023-07-21-112.jpeg
     lede: >
-      The Chelsea Symphony is a dynamic, self-governing ensemble with a major
-      cultural presence in Manhattan's Chelsea neighborhood. It presents music of
-      the highest caliber while upending the traditional hierarchy of the classical
-      orchestra: our musicians rotate as featured soloists, conductors, and
-      composers.
+      The Chelsea Symphony partners with and serves a variety of organizations in
+      the community such as: Street Labs, NYC Department of Correction, American
+      Museum of Natural History, and The Harmony Project.
   -
     title: Jackson Symphony Orchestra 
     image: JSO-conduct-cropped.jpeg
@@ -44,4 +42,3 @@ images:
   - 
     image: swmso-orch.jpeg
 ---
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.

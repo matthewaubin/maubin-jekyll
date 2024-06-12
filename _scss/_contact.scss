@@ -2,7 +2,7 @@ div.marquee-container.contact-page-marquee {
   background-image: url('../images/matt_aubin143-.jpg'); // was 143-1
 }
 
-main.contact-page {
+main.contact-page, .contact-row {
   .container.narrow {
     max-width: 600px;
     flex-flow: column nowrap;

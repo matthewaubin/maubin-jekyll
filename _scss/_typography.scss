@@ -62,7 +62,7 @@ main {
   font-weight: 300;
 }
 
-input {
+input, label, .indicates-required {
   font-family: $body;
 }
 
