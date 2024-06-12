@@ -24,19 +24,16 @@ projects:
     title: Southwest Michigan Symphony Orchestra 
     image: smso-performance.jpeg
     lede: >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat.
+      Now approaching its 75th season, the Southwest Michigan Symphony Orchestra is a regional professional orchestra serving  Berrien, Van Buren, and Cass counties.
 images:
   - 
     image: BCB-2023-07-21-112.jpeg
   - 
-    image: JSO-conduct.jpeg
+    image: tcs-july-2023.jpeg
   - 
     image: smso-performance.jpeg
-  - 
-    image: BCB-2023-07-21-112.jpeg
+  -
+    image: orch-pit.jpg
   - 
     image: JSO-DSC09114.jpeg
   - 

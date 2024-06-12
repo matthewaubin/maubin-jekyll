@@ -33,17 +33,4 @@ projects:
       State School Music Association, Washington State University, The Hartt
       School, American Harp Society, International Double Reeds Society, Northern
       Michigan University, University of Michigan, and Michigan State University.
-images:
-  - 
-    image: BCB-2023-07-21-112.jpeg
-  - 
-    image: JSO-conduct.jpeg
-  - 
-    image: smso-performance.jpeg
-  - 
-    image: BCB-2023-07-21-112.jpeg
-  - 
-    image: JSO-DSC09114.jpeg
-  - 
-    image: swmso-orch.jpeg
 ---
