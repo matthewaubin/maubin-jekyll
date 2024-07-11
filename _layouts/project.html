@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-{% include head.html %}
+
+{% capture title %}{{ page.title }}{% endcapture %}
+{% include head.html title=title %}
 
 <body>
     <div class="mobile-nav internal">
